@@ -36,18 +36,19 @@ header{
     display: flex;
     justify-content: space-between;
 }
-.first{
+.name{
     width: 102px;
     height: 32px;
     border: 1px solid var(--color-white);
 }
-.first h2{
+.name h2{
     font-family: 'Crimson Pro', sans-serif;
     font-weight: 200;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     padding: 5px;
+    text-transform: uppercase;
 }
 .navbar ul{
     display: flex;
@@ -61,8 +62,45 @@ header{
     line-height: 22px;
 }
 /* Main */
+main{
+    margin: 140px 0 0;
+}
+main .text{
+    max-width: 410px;
+    min-width: 280px;
+}
+.text h2{
+    font-family: Lora, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+}
+.text p{
+    margin: 40px 0 48px;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px   
+}
+.text-relative{
+    display: flex;
+}
+.text-relative p{
+    margin: 0;
+}
+.text-relative span{
+    margin: 5px 15px;
+}
 /* Footer */
-
+footer{
+    margin: 40px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-white);
+}
 /* Media Queries */
 @media only screen and (max-width: 950px) {
     body{
