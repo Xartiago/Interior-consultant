@@ -22,7 +22,7 @@ ul {
 a{
     text-decoration: none;
 }
-h1, h2, p, li, a{
+h1, h2, h3, p, li, a{
     color: var(--color-white);
 }
 /* Body */
@@ -64,8 +64,13 @@ header{
 /* Main */
 main{
     margin: 140px 0 0;
+    display: flex;
+    justify-content: space-between;
 }
+/* Text */
 main .text{
+    position: relative;
+    top: 160px;
     max-width: 410px;
     min-width: 280px;
 }
@@ -91,9 +96,54 @@ main .text{
 .text-relative span{
     margin: 5px 15px;
 }
+/* Imgs */
+.img-container{
+    max-width: 900px;
+}
+.card-description{
+    width: 410px;
+    height: 180px;
+    padding: 23px;
+    background-color: var(--color-main);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.card-description h2{
+    width: 282px;
+    margin-top: 11px;
+    font-family: Lora;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--color-white);
+}
+.profile{
+    display: flex;
+}
+.profile-img{
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-data{
+    margin: 4px 20px;
+}
+.profile .profile-data h3{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+.profile-data p{
+    margin-top: 8px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
 /* Footer */
 footer{
-    margin: 40px;
+    margin: 40px 0 0;
     text-align: center;
     font-family: Montserrat;
     font-weight: 400;
@@ -102,7 +152,7 @@ footer{
     color: var(--color-white);
 }
 /* Media Queries */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1024px) {
     body{
         margin: 30px 20px 0;
     }
