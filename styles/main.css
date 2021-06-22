@@ -31,7 +31,7 @@ body{
     background-color: var(--color-main);
 }
 /* Header */
-header{
+/* header{
     max-width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -60,6 +60,43 @@ header{
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+} */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #002;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
 }
 /* Main */
 main{
@@ -186,5 +223,41 @@ footer{
     }
     .card-container{
         margin: 0;
+    }
+}
+@media only screen and (max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    .material-icons.white{
+        color: rgb(255, 255, 255);
+    }
+    nav .mainMenu li a{
+        color: white;
+        font-size: 1.6rem;
+    }
+    nav .mainMenu li a:hover {
+        transform: scale(1.1);
     }
 }
