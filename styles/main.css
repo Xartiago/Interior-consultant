@@ -115,7 +115,6 @@ main .text{
 }
 .img-container{
     max-width: 900px;
-    min-width: 390px;
 }
 .card-description{
     max-width: 410px;
@@ -204,6 +203,9 @@ footer{
     }
 }
 @media only screen and (max-width: 800px){
+    body{
+        margin: 30px;
+    }
     nav .mainMenu {
         height: 100vh;
         position: fixed;
@@ -237,5 +239,12 @@ footer{
     }
     nav .mainMenu li a:hover {
         transform: scale(1.1);
+    }
+    .img-container{
+        max-width: 280px;
+        min-width: 200px;
+    }
+    .card-description{
+        margin: 0%;
     }
 }
